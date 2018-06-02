@@ -30,6 +30,9 @@ const Screen = () => (
 #### Props types
 
 ```containerStyle - custom style for container```
+
 ```textStyle - custom style for text```
+
 ```pointCount - point count (3 default)```
+
 ```duration - animation duration (150ms default)```

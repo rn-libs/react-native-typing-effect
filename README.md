@@ -17,9 +17,12 @@ yarn add https://github.com/userbq201/react-native-typing-effect --save
 #### How to use
 
 ```jsx
+const isShow = true
+
 const Screen = () => (
   <View style={{ flex: 1 }}>
     <TypingIndicator
+      isShow={isShow}
       containerStyle={{ /* custom container style */ }}
       textStyle={{ /* custom text style */ }}
     />
@@ -36,3 +39,5 @@ const Screen = () => (
 ```pointCount - point count (3 default)```
 
 ```duration - animation duration (150ms default)```
+
+```isShow - controll visible (trye default)```

@@ -63,6 +63,10 @@ export class TypingIndicator extends Component {
   }
 
   render() {
+    if (!this.props.isShow) {
+      return null
+    }
+
     return (
       <View
         style={[
@@ -93,11 +97,13 @@ export class TypingIndicator extends Component {
 TypingIndicator.propTypes = {
   pointCount: PT.number,
   duration: PT.number,
+  isShow: PT.bool,
 }
 
 TypingIndicator.defaultProps = {
   pointCount: 3,
   duration: 150,
+  isShow: true,
 }
 
 const styles = StyleSheet.create({

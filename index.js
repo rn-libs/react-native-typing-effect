@@ -32,11 +32,11 @@ export class TypingIndicator extends Component {
   createInterpolateAnimation = (i) => ({
     scale: this.animated[i].interpolate({
       inputRange: [0, 1],
-      outputRange: [2, 4],
+      outputRange: [2, this.props.scaleTo],
     }),
     opacity: this.animated[i].interpolate({
       inputRange: [0, 1],
-      outputRange: [0.5, 0.8],
+      outputRange: [0.5, this.props.opacityTo],
     }),
   })
 
@@ -98,12 +98,16 @@ TypingIndicator.propTypes = {
   pointCount: PT.number,
   duration: PT.number,
   isShow: PT.bool,
+  scaleTo: PT.number,
+  opacityTo: PT.number,
 }
 
 TypingIndicator.defaultProps = {
   pointCount: 3,
   duration: 150,
   isShow: true,
+  scaleTo: 4,
+  opacityTo: 0.8,
 }
 
 const styles = StyleSheet.create({

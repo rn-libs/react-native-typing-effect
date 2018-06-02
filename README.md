@@ -40,4 +40,8 @@ const Screen = () => (
 
 ```duration - animation duration (150ms default)```
 
-```isShow - controll visible (trye default)```
+```isShow - controll visible (true default)```
+
+```scaleTo - point scale max (4 default)```
+
+```opacityTo - point opacity max (0.8 default)```

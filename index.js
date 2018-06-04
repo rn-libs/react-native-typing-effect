@@ -20,6 +20,7 @@ export class TypingIndicator extends Component {
     .timing(value, {
       toValue: this.values[1],
       duration: 150,
+      useNativeDriver: true,
     })
 
   animation = () => {

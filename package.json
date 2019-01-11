@@ -3,15 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazycodeboy/react-native-splash-screen.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "react-native-typing-effect",
+    "android",
+    "ios"
+  ],
+  "author": "Shelomanov Dmitry",
   "license": "ISC",
-  "dependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^16.3.1",
-    "react-native": "^0.55.3"
-  }
+  "peerDependencies": {
+    "react-native": ">=0.47.0"
+  },
+  "bugs": {
+    "url": "https://github.com/userbq201/react-native-typing-effect/issues"
+  },
+  "homepage": "https://github.com/userbq201/react-native-typing-effect#readme"
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PT from 'prop-types'
-import { Text, View, StyleSheet, Animated } from 'react-native'
+import { View, StyleSheet, Animated } from 'react-native'
 
 
 export class TypingIndicator extends Component {
